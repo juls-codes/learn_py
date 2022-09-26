@@ -1,2 +1,2 @@
 # learn_py
-Directory for Python earning exercise 
+Directory for Python learning exercise 
