@@ -1,0 +1,14 @@
+import random
+
+luckyNumber = random.randint(1,100)
+fortuneNumber = random.randint(1,3)
+fortuneReading = ""
+
+if fortuneNumber == 1:
+    fortuneReading = "You will have a great day!"
+if fortuneNumber == 2:
+    fortuneReading = "Today will be just be okay."
+if fortuneNumber == 3:
+    fortuneReading = "Today will be tough. Keep your head up!"
+    
+print(f"{fortuneReading} Your lucky number is {luckyNumber}.")
