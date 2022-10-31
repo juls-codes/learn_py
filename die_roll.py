@@ -1,4 +1,3 @@
-#Jullianne Biay
 #Date created: October 11, 2022
 #Program for rolling a die
 

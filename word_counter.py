@@ -1,4 +1,3 @@
-#Jullianne Biay
 #Date created: October 21, 2022
 #Program for a word counter as a dictionary
 
