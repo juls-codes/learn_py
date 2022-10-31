@@ -16,7 +16,7 @@ while guess != correct_number:
     time.sleep(1)
     if guess < correct_number: #guess is lower than correct_number
             guess = int(input("Incorrect! Guess higher: "))
-    if guess > correct_number: #guess is higher than correct_number
+    if guess > corrAect_number: #guess is higher than correct_number
             guess = int(input("Incorrect! Guess lower: "))
 time.sleep(1)
 print(f"You got it! It took you {guess_count} tries.")
