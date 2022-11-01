@@ -1,17 +1,44 @@
-#Date created: October 31, 2022
-#Program for demonstrating sets
 
+#input() returns strings
+inputA = input("Items for camperA: ")
+inputB = input("Items for camperB: ")
 
-itemsA = ()
+#split strings into a list
+listA = []
+listB = []
 
-user = input("Who are you?: ")
-if (user == "camperA"):
-    itemsA = {input("What are you bringing?: ")}
-    print(itemsA)
-   
-elif (user == "camperB"):
-    itemsB = {input("What are you bringing?: ")}
-    print(itemsB)
+for x in inputA:
+    inputA = inputA.replace(',' , "")
+    listA.extend(inputA.split())
+                 
+for x in inputB:
+    inputB = inputB.replace(',' , "")
+    listB.extend(inputB.split())
 
-else:
-    user = input("Who are you?: ")
+#use set() to convert list to a set
+setA = set(listA)
+setB = set(listB)
+
+#display each camper's set
+print("Items for camperA: ")
+for x in setA:
+    print(x)
+
+print("Items for camperB: ")
+for x in setB:
+    print(x)
+
+#display all items, no repitition
+print("All camping items: ")
+for x in setA|setB:
+    print(x)
+    
+#display common items
+print("Common items between the campers: ")
+for x in setA&setB:
+    print(x)
+    
+#display unique items
+print("Unique items to each camper: ")
+for x in setA^setB:
+    print(x)
