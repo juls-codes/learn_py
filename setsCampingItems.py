@@ -1,21 +1,24 @@
+#Jullianne Biay
+#Date created: October 31, 2022
+#Program to display objects in sets 
 
-#input() returns strings
 inputA = input("Items for camperA: ")
 inputB = input("Items for camperB: ")
 
-#split strings into a list
+#split strings into a list (split by comma)
 listA = []
 listB = []
 
 for x in inputA:
-    inputA = inputA.replace(',' , "")
-    listA.extend(inputA.split())
-                 
-for x in inputB:
-    inputB = inputB.replace(',' , "")
-    listB.extend(inputB.split())
+    inputA = inputA.replace(' ', '')
+    listA.extend(inputA.split(','))
 
-#use set() to convert list to a set
+for x in inputB:
+    inputB = inputB.replace(' ', '')
+    listB.extend(inputB.split(','))
+
+    
+#convert list to a set
 setA = set(listA)
 setB = set(listB)
 
